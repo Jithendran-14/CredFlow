@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+sqlplus -s / as sysdba <<'SQL'
+WHENEVER SQLERROR EXIT FAILURE
+WHENEVER OSERROR EXIT FAILURE
+SET HEADING OFF FEEDBACK OFF
+ALTER SESSION SET CONTAINER=FREEPDB1;
+DECLARE
+  schema_count NUMBER;
+BEGIN
+  SELECT COUNT(*) INTO schema_count FROM dba_users
+  WHERE username IN ('CF_APPLICATION','CF_CONSENT','CF_ELIGIBILITY','CF_ORCHESTRATION','CF_LENDER_INTEGRATION','CF_AUDIT');
+  IF schema_count <> 6 THEN
+    RAISE_APPLICATION_ERROR(-20001,'CredFlow schema initialization is incomplete');
+  END IF;
+END;
+/
+EXIT SUCCESS
+SQL

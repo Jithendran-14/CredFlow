@@ -1,0 +1,55 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "eligibility-service implemented foundation API",
+    "version": "0.1.0",
+    "description": "Only implemented endpoints. Planned business flow is documented in ../day6-flow.md."
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8083"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "paths": {
+    "/api/v1/system/eligibility-service/info": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Authenticated foundation metadata"
+          },
+          "401": {
+            "description": "Authentication required"
+          }
+        }
+      }
+    },
+    "/actuator/health": {
+      "get": {
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Healthy"
+          },
+          "503": {
+            "description": "Unhealthy"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "schemas": {}
+  }
+}

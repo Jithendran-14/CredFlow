@@ -1,0 +1,24 @@
+{
+  "eventId": "22222222-2222-4222-8222-222222222222",
+  "eventType": "application.submitted",
+  "schemaVersion": "1.0",
+  "occurredAt": "2026-10-13T09:30:00Z",
+  "producer": "application-service",
+  "applicationId": "33333333-3333-4333-8333-333333333333",
+  "aggregateVersion": 1,
+  "correlationId": "demo-flow-104",
+  "actor": {
+    "type": "SYSTEM_CLIENT",
+    "subject": "90000000-0000-4000-8000-000000000001",
+    "organisationId": "11111111-1111-4111-8111-111111111111"
+  },
+  "data": {
+    "sellerId": "44444444-4444-4444-8444-000000000104",
+    "marketplaceId": "11111111-1111-4111-8111-111111111111",
+    "requestedAmount": "500000.00",
+    "currency": "INR",
+    "status": "AWAITING_CONSENT",
+    "applicationRevision": 1,
+    "sellerRequestReference": "SELLER-REQUEST-104-001"
+  }
+}

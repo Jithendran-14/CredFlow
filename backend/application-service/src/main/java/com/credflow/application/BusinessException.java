@@ -1,0 +1,6 @@
+package com.credflow.application;
+import org.springframework.http.HttpStatus;
+public class BusinessException extends RuntimeException {
+    final HttpStatus status; final String code;
+    public BusinessException(HttpStatus status,String code,String message) { super(message); this.status=status; this.code=code; }
+}

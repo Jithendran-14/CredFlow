@@ -1,0 +1,798 @@
+{
+  "realm": "credflow",
+  "enabled": true,
+  "sslRequired": "none",
+  "registrationAllowed": false,
+  "roles": {
+    "realm": [
+      {
+        "name": "SELLER"
+      },
+      {
+        "name": "MARKETPLACE_OPERATIONS"
+      },
+      {
+        "name": "LENDER_OFFICER"
+      },
+      {
+        "name": "ADMIN"
+      },
+      {
+        "name": "SERVICE"
+      },
+      {
+        "name": "MARKETPLACE_CLIENT"
+      },
+      {
+        "name": "LENDER_CLIENT"
+      },
+      {
+        "name": "VERIFICATION_CLIENT"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "credflow-ui",
+      "publicClient": true,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": false,
+      "redirectUris": [
+        "http://localhost:5173/*",
+        "http://localhost:7777/callback"
+      ],
+      "webOrigins": [
+        "http://localhost:5173"
+      ],
+      "attributes": {
+        "pkce.code.challenge.method": "S256"
+      },
+      "protocolMappers": [
+        {
+          "name": "credflow-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "credflow-api",
+            "access.token.claim": "true",
+            "id.token.claim": "false"
+          }
+        },
+        {
+          "name": "organisationId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "organisationId",
+            "claim.name": "organisationId",
+            "jsonType.label": "String",
+            "access.token.claim": "true",
+            "id.token.claim": "false",
+            "multivalued": "false"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "credflow-postman",
+      "publicClient": true,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": false,
+      "redirectUris": [
+        "http://localhost:5173/*",
+        "http://localhost:7777/callback"
+      ],
+      "webOrigins": [
+        "http://localhost:5173"
+      ],
+      "attributes": {
+        "pkce.code.challenge.method": "S256"
+      },
+      "protocolMappers": [
+        {
+          "name": "credflow-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "credflow-api",
+            "access.token.claim": "true",
+            "id.token.claim": "false"
+          }
+        },
+        {
+          "name": "organisationId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "organisationId",
+            "claim.name": "organisationId",
+            "jsonType.label": "String",
+            "access.token.claim": "true",
+            "id.token.claim": "false",
+            "multivalued": "false"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "mock-marketplace-client",
+      "publicClient": false,
+      "secret": "${MARKETPLACE_CLIENT_SECRET}",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "credflow-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "credflow-api",
+            "access.token.claim": "true",
+            "id.token.claim": "false"
+          }
+        },
+        {
+          "name": "organisationId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "organisationId",
+            "claim.name": "organisationId",
+            "jsonType.label": "String",
+            "access.token.claim": "true",
+            "id.token.claim": "false",
+            "multivalued": "false"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "mock-bank-a-client",
+      "publicClient": false,
+      "secret": "${BANK_A_CLIENT_SECRET}",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "credflow-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "credflow-api",
+            "access.token.claim": "true",
+            "id.token.claim": "false"
+          }
+        },
+        {
+          "name": "organisationId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "organisationId",
+            "claim.name": "organisationId",
+            "jsonType.label": "String",
+            "access.token.claim": "true",
+            "id.token.claim": "false",
+            "multivalued": "false"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "mock-nbfc-b-client",
+      "publicClient": false,
+      "secret": "${NBFC_B_CLIENT_SECRET}",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "credflow-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "credflow-api",
+            "access.token.claim": "true",
+            "id.token.claim": "false"
+          }
+        },
+        {
+          "name": "organisationId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "organisationId",
+            "claim.name": "organisationId",
+            "jsonType.label": "String",
+            "access.token.claim": "true",
+            "id.token.claim": "false",
+            "multivalued": "false"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "mock-verification-client",
+      "publicClient": false,
+      "secret": "${VERIFICATION_CLIENT_SECRET}",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "credflow-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "credflow-api",
+            "access.token.claim": "true",
+            "id.token.claim": "false"
+          }
+        },
+        {
+          "name": "organisationId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "organisationId",
+            "claim.name": "organisationId",
+            "jsonType.label": "String",
+            "access.token.claim": "true",
+            "id.token.claim": "false",
+            "multivalued": "false"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "application-service",
+      "publicClient": false,
+      "secret": "${APPLICATION_SERVICE_CLIENT_SECRET}",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "credflow-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "credflow-api",
+            "access.token.claim": "true",
+            "id.token.claim": "false"
+          }
+        },
+        {
+          "name": "organisationId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "organisationId",
+            "claim.name": "organisationId",
+            "jsonType.label": "String",
+            "access.token.claim": "true",
+            "id.token.claim": "false",
+            "multivalued": "false"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "consent-verification-service",
+      "publicClient": false,
+      "secret": "${CONSENT_VERIFICATION_SERVICE_CLIENT_SECRET}",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "credflow-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "credflow-api",
+            "access.token.claim": "true",
+            "id.token.claim": "false"
+          }
+        },
+        {
+          "name": "organisationId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "organisationId",
+            "claim.name": "organisationId",
+            "jsonType.label": "String",
+            "access.token.claim": "true",
+            "id.token.claim": "false",
+            "multivalued": "false"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "eligibility-service",
+      "publicClient": false,
+      "secret": "${ELIGIBILITY_SERVICE_CLIENT_SECRET}",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "credflow-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "credflow-api",
+            "access.token.claim": "true",
+            "id.token.claim": "false"
+          }
+        },
+        {
+          "name": "organisationId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "organisationId",
+            "claim.name": "organisationId",
+            "jsonType.label": "String",
+            "access.token.claim": "true",
+            "id.token.claim": "false",
+            "multivalued": "false"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "orchestration-service",
+      "publicClient": false,
+      "secret": "${ORCHESTRATION_SERVICE_CLIENT_SECRET}",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "credflow-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "credflow-api",
+            "access.token.claim": "true",
+            "id.token.claim": "false"
+          }
+        },
+        {
+          "name": "organisationId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "organisationId",
+            "claim.name": "organisationId",
+            "jsonType.label": "String",
+            "access.token.claim": "true",
+            "id.token.claim": "false",
+            "multivalued": "false"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "lender-integration-service",
+      "publicClient": false,
+      "secret": "${LENDER_INTEGRATION_SERVICE_CLIENT_SECRET}",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "credflow-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "credflow-api",
+            "access.token.claim": "true",
+            "id.token.claim": "false"
+          }
+        },
+        {
+          "name": "organisationId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "organisationId",
+            "claim.name": "organisationId",
+            "jsonType.label": "String",
+            "access.token.claim": "true",
+            "id.token.claim": "false",
+            "multivalued": "false"
+          }
+        }
+      ]
+    },
+    {
+      "clientId": "audit-service",
+      "publicClient": false,
+      "secret": "${AUDIT_SERVICE_CLIENT_SECRET}",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "fullScopeAllowed": true,
+      "defaultClientScopes": [
+        "roles"
+      ],
+      "protocolMappers": [
+        {
+          "name": "credflow-api-audience",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "credflow-api",
+            "access.token.claim": "true",
+            "id.token.claim": "false"
+          }
+        },
+        {
+          "name": "organisationId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "organisationId",
+            "claim.name": "organisationId",
+            "jsonType.label": "String",
+            "access.token.claim": "true",
+            "id.token.claim": "false",
+            "multivalued": "false"
+          }
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "90000000-0000-4000-8000-000000000001",
+      "username": "service-account-mock-marketplace-client",
+      "enabled": true,
+      "serviceAccountClientId": "mock-marketplace-client",
+      "realmRoles": [
+        "MARKETPLACE_CLIENT"
+      ],
+      "attributes": {
+        "organisationId": [
+          "11111111-1111-4111-8111-111111111111"
+        ]
+      }
+    },
+    {
+      "id": "90000000-0000-4000-8000-000000000002",
+      "username": "service-account-mock-bank-a-client",
+      "enabled": true,
+      "serviceAccountClientId": "mock-bank-a-client",
+      "realmRoles": [
+        "LENDER_CLIENT"
+      ],
+      "attributes": {
+        "organisationId": [
+          "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+        ]
+      }
+    },
+    {
+      "id": "90000000-0000-4000-8000-000000000003",
+      "username": "service-account-mock-nbfc-b-client",
+      "enabled": true,
+      "serviceAccountClientId": "mock-nbfc-b-client",
+      "realmRoles": [
+        "LENDER_CLIENT"
+      ],
+      "attributes": {
+        "organisationId": [
+          "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb"
+        ]
+      }
+    },
+    {
+      "id": "90000000-0000-4000-8000-000000000004",
+      "username": "service-account-mock-verification-client",
+      "enabled": true,
+      "serviceAccountClientId": "mock-verification-client",
+      "realmRoles": [
+        "VERIFICATION_CLIENT"
+      ],
+      "attributes": {}
+    },
+    {
+      "id": "90000000-0000-4000-8000-000000000005",
+      "username": "service-account-application-service",
+      "enabled": true,
+      "serviceAccountClientId": "application-service",
+      "realmRoles": [
+        "SERVICE"
+      ],
+      "attributes": {}
+    },
+    {
+      "id": "90000000-0000-4000-8000-000000000006",
+      "username": "service-account-consent-verification-service",
+      "enabled": true,
+      "serviceAccountClientId": "consent-verification-service",
+      "realmRoles": [
+        "SERVICE"
+      ],
+      "attributes": {}
+    },
+    {
+      "id": "90000000-0000-4000-8000-000000000007",
+      "username": "service-account-eligibility-service",
+      "enabled": true,
+      "serviceAccountClientId": "eligibility-service",
+      "realmRoles": [
+        "SERVICE"
+      ],
+      "attributes": {}
+    },
+    {
+      "id": "90000000-0000-4000-8000-000000000008",
+      "username": "service-account-orchestration-service",
+      "enabled": true,
+      "serviceAccountClientId": "orchestration-service",
+      "realmRoles": [
+        "SERVICE"
+      ],
+      "attributes": {}
+    },
+    {
+      "id": "90000000-0000-4000-8000-000000000009",
+      "username": "service-account-lender-integration-service",
+      "enabled": true,
+      "serviceAccountClientId": "lender-integration-service",
+      "realmRoles": [
+        "SERVICE"
+      ],
+      "attributes": {}
+    },
+    {
+      "id": "90000000-0000-4000-8000-000000000010",
+      "username": "service-account-audit-service",
+      "enabled": true,
+      "serviceAccountClientId": "audit-service",
+      "realmRoles": [
+        "SERVICE"
+      ],
+      "attributes": {}
+    },
+    {
+      "id": "70000000-0000-4000-8000-000000000104",
+      "username": "seller104",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "seller104",
+      "lastName": "Demo",
+      "email": "seller104@example.test",
+      "realmRoles": [
+        "SELLER"
+      ],
+      "attributes": {},
+      "credentials": [
+        {
+          "type": "password",
+          "value": "${DEMO_USER_PASSWORD}",
+          "temporary": false
+        }
+      ]
+    },
+    {
+      "id": "70000000-0000-4000-8000-000000000105",
+      "username": "seller105",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "seller105",
+      "lastName": "Demo",
+      "email": "seller105@example.test",
+      "realmRoles": [
+        "SELLER"
+      ],
+      "attributes": {},
+      "credentials": [
+        {
+          "type": "password",
+          "value": "${DEMO_USER_PASSWORD}",
+          "temporary": false
+        }
+      ]
+    },
+    {
+      "id": "70000000-0000-4000-8000-000000000106",
+      "username": "seller106",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "seller106",
+      "lastName": "Demo",
+      "email": "seller106@example.test",
+      "realmRoles": [
+        "SELLER"
+      ],
+      "attributes": {},
+      "credentials": [
+        {
+          "type": "password",
+          "value": "${DEMO_USER_PASSWORD}",
+          "temporary": false
+        }
+      ]
+    },
+    {
+      "id": "70000000-0000-4000-8000-000000000107",
+      "username": "seller107",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "seller107",
+      "lastName": "Demo",
+      "email": "seller107@example.test",
+      "realmRoles": [
+        "SELLER"
+      ],
+      "attributes": {},
+      "credentials": [
+        {
+          "type": "password",
+          "value": "${DEMO_USER_PASSWORD}",
+          "temporary": false
+        }
+      ]
+    },
+    {
+      "id": "70000000-0000-4000-8000-000000000108",
+      "username": "marketplace1",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "marketplace1",
+      "lastName": "Demo",
+      "email": "marketplace1@example.test",
+      "realmRoles": [
+        "MARKETPLACE_OPERATIONS"
+      ],
+      "attributes": {
+        "organisationId": [
+          "11111111-1111-4111-8111-111111111111"
+        ]
+      },
+      "credentials": [
+        {
+          "type": "password",
+          "value": "${DEMO_USER_PASSWORD}",
+          "temporary": false
+        }
+      ]
+    },
+    {
+      "id": "70000000-0000-4000-8000-000000000109",
+      "username": "marketplace2",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "marketplace2",
+      "lastName": "Demo",
+      "email": "marketplace2@example.test",
+      "realmRoles": [
+        "MARKETPLACE_OPERATIONS"
+      ],
+      "attributes": {
+        "organisationId": [
+          "11111111-1111-4111-8111-111111111111"
+        ]
+      },
+      "credentials": [
+        {
+          "type": "password",
+          "value": "${DEMO_USER_PASSWORD}",
+          "temporary": false
+        }
+      ]
+    },
+    {
+      "id": "70000000-0000-4000-8000-000000000110",
+      "username": "banka-officer",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "banka-officer",
+      "lastName": "Demo",
+      "email": "banka-officer@example.test",
+      "realmRoles": [
+        "LENDER_OFFICER"
+      ],
+      "attributes": {
+        "organisationId": [
+          "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+        ]
+      },
+      "credentials": [
+        {
+          "type": "password",
+          "value": "${DEMO_USER_PASSWORD}",
+          "temporary": false
+        }
+      ]
+    },
+    {
+      "id": "70000000-0000-4000-8000-000000000111",
+      "username": "nbfcb-officer",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "nbfcb-officer",
+      "lastName": "Demo",
+      "email": "nbfcb-officer@example.test",
+      "realmRoles": [
+        "LENDER_OFFICER"
+      ],
+      "attributes": {
+        "organisationId": [
+          "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb"
+        ]
+      },
+      "credentials": [
+        {
+          "type": "password",
+          "value": "${DEMO_USER_PASSWORD}",
+          "temporary": false
+        }
+      ]
+    },
+    {
+      "id": "70000000-0000-4000-8000-000000000112",
+      "username": "credflow-admin",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "credflow-admin",
+      "lastName": "Demo",
+      "email": "credflow-admin@example.test",
+      "realmRoles": [
+        "ADMIN"
+      ],
+      "attributes": {},
+      "credentials": [
+        {
+          "type": "password",
+          "value": "${DEMO_USER_PASSWORD}",
+          "temporary": false
+        }
+      ]
+    }
+  ]
+}

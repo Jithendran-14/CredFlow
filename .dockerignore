@@ -1,0 +1,7 @@
+.git
+.env
+**/src
+**/target/classes
+**/target/test-classes
+**/target/surefire-reports
+work

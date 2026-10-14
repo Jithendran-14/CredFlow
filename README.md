@@ -21,6 +21,8 @@ Oracle Container Registry may require sign-in and acceptance of its image terms.
 
 ## Quick start on Windows
 
+For STS without Docker and an existing Oracle database, follow [the local Oracle setup guide](docs/development/sts-local-oracle.md). It includes schema setup, connection verification and a Docker-free seed script.
+
 From the repository root in PowerShell:
 
 ```powershell
@@ -83,3 +85,5 @@ Read [developer ownership](docs/development/ownership.md), [implementation statu
 ## Validation limits
 
 The starter's automated suite uses H2 in Oracle compatibility mode to check Java transactions, validation and authorisation without Docker. This is not evidence of Oracle SQL/PLSQL compatibility. Container startup, real Keycloak token issuance, the Kafka relay and Oracle migrations require the Docker smoke checks in the runbook. SQL and PL/SQL acceptance tests must run against Oracle before the Day 6 milestone.
+
+On 14 October 2026, native Oracle connections for all six service users and Application Service's two migrations were verified against local FREEPDB1 without Docker. Its health check and local seller seeding succeeded. Kafka/Keycloak integration and the remaining services' live database migrations still need verification; see [the validation record](docs/development/validation.md).

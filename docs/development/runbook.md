@@ -49,3 +49,5 @@ Stop containers with `docker compose --env-file .env -f infrastructure/compose.y
 6. Run Oracle-backed package and transaction checks after Eligibility implements the package.
 
 Docker was unavailable on the starter author's machine; these live checks have not been represented as completed.
+
+For the later native Oracle verification and Docker-free setup, see [STS local Oracle](sts-local-oracle.md) and [validation](validation.md). That check covers service-user connectivity and Application migrations, health and seeding; it does not complete the full infrastructure acceptance checklist above.

@@ -11,3 +11,9 @@ All YAML/JSON configuration parses. PowerShell helpers parse and generated/impor
 The packaged external simulator was started as a local Java process: health returned UP and its protected API returned 401 without a token. The process was stopped after the check.
 
 Docker was unavailable. Oracle migrations/locking, live Kafka outbox/Audit delivery, Keycloak realm import/token issuance and full Compose startup remain unverified. H2 transaction tests do not establish Oracle or PL/SQL compatibility. Follow the live acceptance checklist in runbook.md before declaring the shared infrastructure ready.
+
+## Local Oracle verification on 14 October 2026
+
+The existing native Oracle installation at localhost:1521/FREEPDB1 was verified without Docker. The local setup created all six CF service users and connection checks succeeded for each using its own credential. Application Service then started against Oracle, successfully applied Flyway V1 and V2, and returned health UP. The Docker-free seed script created four synthetic seller records. The temporary Java process was stopped after verification.
+
+Application Service used an isolated test port, 18081, and `credflow.outbox.enabled=false` for this database check. Normal STS runs use 8081. Kafka, Keycloak, Audit migration/consumption, and the other services' live migrations were not verified by this check; neither was the application's outbox locking query. The financial package remains to implement. See sts-local-oracle.md for local setup instructions.

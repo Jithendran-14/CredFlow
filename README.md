@@ -23,6 +23,8 @@ Oracle Container Registry may require sign-in and acceptance of its image terms.
 
 For STS without Docker and an existing Oracle database, follow [the local Oracle setup guide](docs/development/sts-local-oracle.md). It includes schema setup, connection verification and a Docker-free seed script.
 
+Then follow [local Keycloak and Insomnia tests](docs/development/keycloak-insomnia-local.md) to obtain a real marketplace token and exercise application submission, replay and reads.
+
 From the repository root in PowerShell:
 
 ```powershell

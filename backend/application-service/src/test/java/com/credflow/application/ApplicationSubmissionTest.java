@@ -36,7 +36,7 @@ class ApplicationSubmissionTest {
             new ApplicationRequest.InitialSharingConsent("APPLICATION_SHARE_WITH_CREDFLOW","1.0",Instant.parse("2026-01-01T00:00:00Z"),"evidence-104"));
     }
     org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.JwtRequestPostProcessor marketplace() {
-        return jwt().jwt(j->j.subject("marketplace-client").claim("organisationId",MARKET).claim("clientId","mock-marketplace-client")).authorities(new SimpleGrantedAuthority("ROLE_MARKETPLACE_CLIENT"));
+        return jwt().jwt(j->j.subject("marketplace-client").claim("organisationId",MARKET).claim("realm_access",Map.of("roles",List.of("MARKETPLACE_CLIENT")))).authorities(new SimpleGrantedAuthority("ROLE_MARKETPLACE_CLIENT"));
     }
     @Test void creationAndEventCommitTogetherAndReplayDoesNotDuplicate() throws Exception {
         String body=json.writeValueAsString(request("500000.00"));
@@ -93,5 +93,11 @@ class ApplicationSubmissionTest {
         }
         assertThat(jdbc.queryForObject("SELECT COUNT(*) FROM event_outbox",Integer.class)).isEqualTo(1);
     }
-    Jwt machineJwt() { return Jwt.withTokenValue("test").header("alg","RS256").subject("marketplace-client").claim("organisationId",MARKET).claim("clientId","mock-marketplace-client").build(); }
+    @Test void marketplaceEmployeeIsAttributedAsHuman() throws Exception {
+        Jwt employee=Jwt.withTokenValue("test").header("alg","RS256").subject("marketplace-employee").claim("organisationId",MARKET).claim("realm_access",Map.of("roles",List.of("MARKETPLACE_OPERATIONS"))).build();
+        service.submit(request("500000.00"),"human-key",employee,"human-flow");
+        var event=json.readTree(jdbc.queryForObject("SELECT payload FROM event_outbox",String.class));
+        assertThat(event.path("actor").path("type").asText()).isEqualTo("HUMAN");
+    }
+    Jwt machineJwt() { return Jwt.withTokenValue("test").header("alg","RS256").subject("marketplace-client").claim("organisationId",MARKET).claim("realm_access",Map.of("roles",List.of("MARKETPLACE_CLIENT"))).build(); }
 }

@@ -37,7 +37,10 @@ import org.springframework.transaction.annotation.Transactional;
         var event=new LinkedHashMap<String,Object>();
         event.put("eventId",eventId); event.put("eventType","application.submitted"); event.put("schemaVersion","1.0"); event.put("occurredAt",Instant.now().toString());
         event.put("producer","application-service"); event.put("applicationId",id); event.put("aggregateVersion",1); event.put("correlationId",correlationId);
-        event.put("actor",Map.of("type",actor.hasClaim("clientId")?"SYSTEM_CLIENT":"HUMAN","subject",actor.getSubject(),"organisationId",request.marketplaceId().toString()));
+        Object access=actor.getClaims().get("realm_access");
+        boolean systemClient=access instanceof Map<?,?> rolesMap
+            && rolesMap.get("roles") instanceof Collection<?> roles && roles.contains("MARKETPLACE_CLIENT");
+        event.put("actor",Map.of("type",systemClient?"SYSTEM_CLIENT":"HUMAN","subject",actor.getSubject(),"organisationId",request.marketplaceId().toString()));
         event.put("data",Map.of("sellerId",seller,"marketplaceId",request.marketplaceId().toString(),"requestedAmount",request.requestedAmount(),"currency","INR","status","AWAITING_CONSENT","applicationRevision",1,"sellerRequestReference",request.sellerRequestReference()));
         jdbc.update("INSERT INTO event_outbox(event_id,application_id,event_type,payload) VALUES(?,?,?,?)",eventId,id,"application.submitted",encode(event));
         return load(id);

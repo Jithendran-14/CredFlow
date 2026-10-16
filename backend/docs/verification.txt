@@ -1,0 +1,86 @@
+CREDFLOW MEMBER 3 - APPLICATIONS ORGANISED BY LAYER
+Verified 2026-10-16 IST
+
+APPLICATIONS
+Orchestration 8084, CF_ORCHESTRATION.
+Lender Integration 8087, CF_LENDER_INTEGRATION.
+Mock Bank A 8091, CF_SIM_BANK_A.
+Mock NBFC B 8092, CF_SIM_NBFC_B.
+
+PACKAGE LAYOUT IN EVERY APPLICATION
+com.credflow: owning Spring Boot application main class.
+com.credflow.api: annotated HTTP mapping/parameter interfaces.
+com.credflow.controller: REST implementations that delegate to services.
+com.credflow.service: business logic and transaction coordination.
+com.credflow.dto: typed requests, replies, receipts and internal delivery data.
+com.credflow.entity: JPA entities with private fields and public accessors.
+com.credflow.repository: own-schema JPA operations, queries and locking.
+com.credflow.scheduler: background entrypoints that invoke the owning service.
+
+Each lender now owns its service, repository, DTOs and entities inside its own
+application source tree. There is no simulation library dependency. The only shared
+library is member3-common, under the infrastructure namespace com.credflow.platform.
+Its delivery entity moved to com.credflow.platform.entity; only Orchestration and
+Integration scan that entity package. Bank apps load only their own SimCase and
+SimCallback entities. No application depends on a peer executable application's JAR.
+See docs/java-package-map.csv for every application's current class/source location.
+
+VERIFIED LOCALLY
+Maven verify: BUILD SUCCESS. All four executable Spring Boot JARs packaged.
+191 tests; 0 failures; 0 errors; 0 skipped.
+Java25.0.4.1, Java21 compilation target, Maven3.9.16, SpringBoot3.5.6.
+153 source/configuration/package boundary assertions passed.
+3310 API/event contract assertions passed.
+
+The application-context tests check that every API-interface operation is registered
+on its controller, component discovery succeeds, entity scanning loads exactly the
+owning application's mapped set, and all entity instance fields are private.
+Both banks' own behavior suites run separately. Ownership tests reject the peer bank
+before database access, reject mismatching configured bank identity, and check that
+callback workers poll only the owning lender. Typed integration acknowledgement
+records are checked against the existing wire fields.
+
+Per-module tests/failures/errors/skipped:
+backend/member3-common: 42/0/0/0
+backend/orchestration-service: 69/0/0/0
+backend/lender-integration-service: 30/0/0/0
+mocks/mock-bank-a: 25/0/0/0
+mocks/mock-nbfc-b: 25/0/0/0
+
+EXECUTABLE PACKAGING
+Each executable JAR contains all seven application layer packages and its own
+com.credflow main class. Oracle JDBC is present; H2 and peer executable dependencies
+are absent. Neither bank depends on a simulation library. Public main class names:
+com.credflow.OrchestrationServiceApplication
+com.credflow.LenderIntegrationServiceApplication
+com.credflow.MockBankAApplication
+com.credflow.MockNbfcBApplication
+
+ORACLE AND API COMPATIBILITY
+Hibernate's Oracle export of the same 11 distinct mapped entity definitions is
+identical to the pre-package-refactor export. NBFC B's two entities were also exported
+independently and match. Private-field JPA annotations, UUID/Boolean mapping settings,
+column definitions and mapped uniqueness are preserved. The 14 physical tables and
+two sequences are unchanged; the existing SQL remains compatible. Live Oracle
+execution/validation was not performed without actual database configuration.
+
+HTTP paths and event contracts are retained. Ports and callback client identities
+are unchanged from the preceding independent-service release. Both supplied Member1
+and Member2 source contracts remain byte-for-byte unchanged under contracts/upstream.
+The upstream provider mock on8090 remains external. No frontend is included.
+
+REMAINING ENVIRONMENT VERIFICATION
+Default checks use offline Spring contexts, generated crypto fixtures and mocked
+database/network boundaries. They do not establish Oracle/Kafka/Auth/Gateway or
+teammate availability. Configure real public issuer/audience/JWKS or public PEM,
+scoped machine grants/client secrets, Oracle owners and actual service endpoints.
+Run the opt-in Oracle profile and both full lender journeys on the intended test
+environment before declaring end-to-end deployment complete. Previously documented
+upstream publisher/Consent/Eligibility/financial-provider/Audit gates remain open.
+
+DELIVERY
+Source ZIP contains the four applications, common infrastructure, tests, contracts,
+manual database SQL, scoped environment templates, launch/check scripts and updated
+README/START_HERE instructions. target folders, built JARs and filled environment
+files are excluded. Build a fresh extraction using mvn clean verify from the nested
+backend Maven folder. Do not merge old flat-package classes into this release.

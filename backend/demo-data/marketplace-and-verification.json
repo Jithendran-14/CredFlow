@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0",
+  "purpose": "Fictional Member2-format dataset definitions for owners to seed and authorize. Actual rule thresholds and financial sellerFixtureId mapping require their confirmation.",
+  "bankAId": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbb1",
+  "nbfcBId": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbb2",
+  "fixtures": [
+    {
+      "marketplaceId": "33333333-3333-4333-8333-333333333333",
+      "marketplaceSellerId": "DEMO-BANK-A",
+      "sellerId": "SELLER-DEMO-BANK-A",
+      "sellerSubject": "demo-seller-bank-a",
+      "fixtureIdentityId": "DEMO-VERIFIED-001",
+      "businessProfile": {
+        "businessStartDate": "2024-10-16",
+        "businessName": "Synthetic Demo Shop",
+        "displayName": "Synthetic Demo Seller"
+      },
+      "requestedAmount": "500000.00",
+      "currency": "INR",
+      "loanPurpose": "WORKING_CAPITAL",
+      "asOfDate": "2026-10-16",
+      "sourceProvider": "SYNTHETIC_MARKETPLACE",
+      "dataReference": "DEMO-BANK-A",
+      "dataVersion": "1",
+      "retrievedAt": "2026-10-16T06:28:05.0414745Z",
+      "coverageStatus": "COMPLETE",
+      "months": [
+        {
+          "month": "2026-07",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-07-31",
+          "grossSales": "660000.00",
+          "returnsAmount": "60000.00",
+          "payoutAmount": "550000.00",
+          "orderCount": 100,
+          "returnedOrderCount": 10,
+          "coverageStatus": "COMPLETE"
+        },
+        {
+          "month": "2026-08",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "grossSales": "660000.00",
+          "returnsAmount": "60000.00",
+          "payoutAmount": "550000.00",
+          "orderCount": 100,
+          "returnedOrderCount": 10,
+          "coverageStatus": "COMPLETE"
+        },
+        {
+          "month": "2026-09",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "grossSales": "660000.00",
+          "returnsAmount": "60000.00",
+          "payoutAmount": "550000.00",
+          "orderCount": 100,
+          "returnedOrderCount": 10,
+          "coverageStatus": "COMPLETE"
+        }
+      ],
+      "verificationStatus": "VERIFIED",
+      "targetForAgreedDemoRules": {
+        "selectedLenderId": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbb1",
+        "outcome": "EVALUATED",
+        "indicativeMaxAmount": "600000.00"
+      }
+    },
+    {
+      "marketplaceId": "33333333-3333-4333-8333-333333333333",
+      "marketplaceSellerId": "DEMO-NBFC-B",
+      "sellerId": "SELLER-DEMO-NBFC-B",
+      "sellerSubject": "demo-seller-nbfc-b",
+      "fixtureIdentityId": "DEMO-VERIFIED-001",
+      "businessProfile": {
+        "businessStartDate": "2026-01-16",
+        "businessName": "Synthetic Demo Shop",
+        "displayName": "Synthetic Demo Seller"
+      },
+      "requestedAmount": "150000.00",
+      "currency": "INR",
+      "loanPurpose": "WORKING_CAPITAL",
+      "asOfDate": "2026-10-16",
+      "sourceProvider": "SYNTHETIC_MARKETPLACE",
+      "dataReference": "DEMO-NBFC-B",
+      "dataVersion": "1",
+      "retrievedAt": "2026-10-16T06:28:05.0444190Z",
+      "coverageStatus": "COMPLETE",
+      "months": [
+        {
+          "month": "2026-07",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-07-31",
+          "grossSales": "220000.00",
+          "returnsAmount": "20000.00",
+          "payoutAmount": "180000.00",
+          "orderCount": 100,
+          "returnedOrderCount": 10,
+          "coverageStatus": "COMPLETE"
+        },
+        {
+          "month": "2026-08",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "grossSales": "220000.00",
+          "returnsAmount": "20000.00",
+          "payoutAmount": "180000.00",
+          "orderCount": 100,
+          "returnedOrderCount": 10,
+          "coverageStatus": "COMPLETE"
+        },
+        {
+          "month": "2026-09",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "grossSales": "220000.00",
+          "returnsAmount": "20000.00",
+          "payoutAmount": "180000.00",
+          "orderCount": 100,
+          "returnedOrderCount": 10,
+          "coverageStatus": "COMPLETE"
+        }
+      ],
+      "verificationStatus": "VERIFIED",
+      "targetForAgreedDemoRules": {
+        "selectedLenderId": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbb2",
+        "outcome": "EVALUATED",
+        "indicativeMaxAmount": "200000.00"
+      }
+    }
+  ]
+}

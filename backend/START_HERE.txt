@@ -1,0 +1,26 @@
+CREDFLOW MEMBER 3 - FOUR INDEPENDENT APPLICATIONS WITH LAYER PACKAGES
+
+1. Extract into a fresh folder. Do not merge obsolete modules from earlier ZIPs.
+2. Read README.md and docs/architecture/independent-services.md.
+   Each app now contains com.credflow.api, controller, service, dto, entity,
+   repository and scheduler. Main classes are directly under com.credflow.
+3. Configure Oracle and Auth values in .env (copy .env.example).
+   Each app only needs its own DB credentials. Missing scoped machine grants
+   remain an upstream dependency; do not substitute ADMIN credentials.
+4. Database tables are unchanged. For a NEW database only, run the SQL in
+   database/ as SYSTEM in the correct PDB. Do not recreate existing matching tables.
+5. From the nested backend/ Maven folder run: mvn clean package
+6. Start each application in its own terminal from the outer project root:
+   .\scripts\Start-Member3Service.ps1 -Service bank-a
+   .\scripts\Start-Member3Service.ps1 -Service nbfc-b
+   .\scripts\Start-Member3Service.ps1 -Service integration
+   .\scripts\Start-Member3Service.ps1 -Service orchestration
+7. Ports: Orchestration8084, Integration8087, Bank A8091, NBFC B8092.
+   No Member 3 process uses8090; upstream shared provider mocks remain external.
+8. Import the four service-specific contracts from contracts/openapi/.
+   The combined mock-lenders.yaml is a reference with path-level server URLs.
+9. Run scripts/Test-Contracts.ps1 and scripts/Test-ServiceBoundaries.ps1.
+   Then, with real configured infrastructure, run the owning Oracle tests and API
+   journey. See docs/acceptance-checklist.md for remaining live verification.
+
+No frontend or automatic database migration is included.

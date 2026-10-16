@@ -1,0 +1,12 @@
+.env
+scripts/member3-env.local.ps1
+**/target/
+**/.classpath
+**/.project
+**/.settings/
+.metadata/
+demo-evidence/
+*.log
+
+# Local per-service credential files
+config/*.env

@@ -1,0 +1,263 @@
+2026-10-16 14:24:23,861 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2026-10-16 14:25:38,081 [Worker-1: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.credflow:member3-parent:1.0.0 @ C:\credflow\backend\backend\pom.xml.
+2026-10-16 14:25:39,790 [Worker-1: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.credflow:member3-common:1.0.0 @ C:\credflow\backend\backend\member3-common\pom.xml.
+2026-10-16 14:25:40,324 [Worker-1: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.credflow:orchestration-service:1.0.0 @ C:\credflow\backend\backend\orchestration-service\pom.xml.
+2026-10-16 14:25:40,452 [Worker-1: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier  to /member3-common/target/classes
+2026-10-16 14:25:40,702 [Worker-1: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.credflow:lender-integration-service:1.0.0 @ C:\credflow\backend\backend\lender-integration-service\pom.xml.
+2026-10-16 14:25:40,712 [Worker-1: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier  to /member3-common/target/classes
+2026-10-16 14:25:40,904 [Worker-1: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.credflow:mock-bank-a:1.0.0 @ C:\credflow\backend\mocks\mock-bank-a\pom.xml.
+2026-10-16 14:25:40,918 [Worker-1: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier  to /member3-common/target/classes
+2026-10-16 14:25:41,108 [Worker-1: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.credflow:mock-nbfc-b:1.0.0 @ C:\credflow\backend\mocks\mock-nbfc-b\pom.xml.
+2026-10-16 14:25:41,117 [Worker-1: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier  to /member3-common/target/classes
+2026-10-16 14:25:43,568 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /member3-common/src/main/java
+2026-10-16 14:25:43,570 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /member3-common/src/main/resources
+2026-10-16 14:25:43,578 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /member3-common/src/main/resources
+2026-10-16 14:25:43,586 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /member3-common/src/test/java
+2026-10-16 14:25:43,588 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /member3-common/src/test/resources
+2026-10-16 14:25:44,985 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /orchestration-service/src/main/java
+2026-10-16 14:25:44,986 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /orchestration-service/src/main/resources
+2026-10-16 14:25:45,002 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /orchestration-service/src/main/resources
+2026-10-16 14:25:45,015 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /orchestration-service/src/test/java
+2026-10-16 14:25:45,019 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /orchestration-service/src/test/resources
+2026-10-16 14:25:46,082 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /lender-integration-service/src/main/java
+2026-10-16 14:25:46,084 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /lender-integration-service/src/main/resources
+2026-10-16 14:25:46,096 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /lender-integration-service/src/main/resources
+2026-10-16 14:25:46,106 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /lender-integration-service/src/test/java
+2026-10-16 14:25:46,108 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /lender-integration-service/src/test/resources
+2026-10-16 14:25:47,028 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mock-bank-a/src/main/java
+2026-10-16 14:25:47,029 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mock-bank-a/src/main/resources
+2026-10-16 14:25:47,040 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mock-bank-a/src/main/resources
+2026-10-16 14:25:47,055 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mock-bank-a/src/test/java
+2026-10-16 14:25:47,057 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mock-bank-a/src/test/resources
+2026-10-16 14:25:47,735 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mock-nbfc-b/src/main/java
+2026-10-16 14:25:47,736 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mock-nbfc-b/src/main/resources
+2026-10-16 14:25:47,742 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mock-nbfc-b/src/main/resources
+2026-10-16 14:25:47,750 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mock-nbfc-b/src/test/java
+2026-10-16 14:25:47,750 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mock-nbfc-b/src/test/resources
+2026-10-16 14:25:48,353 [Worker-1: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 6 project(s) in 13 sec
+2026-10-16 14:25:48,470 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-10-16 14:25:51,288 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.credflow:lender-integration-service:1.0.0 @ C:\credflow\backend\backend\lender-integration-service\pom.xml.
+2026-10-16 14:25:52,154 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier  to /member3-common/target/classes
+2026-10-16 14:25:52,377 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.credflow:member3-common:1.0.0 @ C:\credflow\backend\backend\member3-common\pom.xml.
+2026-10-16 14:25:52,551 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.credflow:member3-parent:1.0.0 @ C:\credflow\backend\backend\pom.xml.
+2026-10-16 14:25:52,674 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.credflow:mock-bank-a:1.0.0 @ C:\credflow\backend\mocks\mock-bank-a\pom.xml.
+2026-10-16 14:25:52,682 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier  to /member3-common/target/classes
+2026-10-16 14:25:52,918 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.credflow:mock-nbfc-b:1.0.0 @ C:\credflow\backend\mocks\mock-nbfc-b\pom.xml.
+2026-10-16 14:25:52,925 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier  to /member3-common/target/classes
+2026-10-16 14:25:53,271 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.credflow:orchestration-service:1.0.0 @ C:\credflow\backend\backend\orchestration-service\pom.xml.
+2026-10-16 14:25:53,279 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier  to /member3-common/target/classes
+2026-10-16 14:25:55,950 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /lender-integration-service/src/main/java
+2026-10-16 14:25:55,952 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /lender-integration-service/src/main/resources
+2026-10-16 14:25:55,952 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /lender-integration-service/src/main/resources
+2026-10-16 14:25:55,953 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /lender-integration-service/src/test/java
+2026-10-16 14:25:55,954 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /lender-integration-service/src/test/resources
+2026-10-16 14:25:56,405 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /member3-common/src/main/java
+2026-10-16 14:25:56,406 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /member3-common/src/main/resources
+2026-10-16 14:25:56,408 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /member3-common/src/main/resources
+2026-10-16 14:25:56,409 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /member3-common/src/test/java
+2026-10-16 14:25:56,410 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /member3-common/src/test/resources
+2026-10-16 14:25:56,864 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mock-bank-a/src/main/java
+2026-10-16 14:25:56,865 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mock-bank-a/src/main/resources
+2026-10-16 14:25:56,867 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mock-bank-a/src/main/resources
+2026-10-16 14:25:56,868 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mock-bank-a/src/test/java
+2026-10-16 14:25:56,869 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mock-bank-a/src/test/resources
+2026-10-16 14:25:57,236 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mock-nbfc-b/src/main/java
+2026-10-16 14:25:57,237 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mock-nbfc-b/src/main/resources
+2026-10-16 14:25:57,238 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mock-nbfc-b/src/main/resources
+2026-10-16 14:25:57,238 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mock-nbfc-b/src/test/java
+2026-10-16 14:25:57,239 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mock-nbfc-b/src/test/resources
+2026-10-16 14:25:57,712 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /orchestration-service/src/main/java
+2026-10-16 14:25:57,715 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /orchestration-service/src/main/resources
+2026-10-16 14:25:57,716 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /orchestration-service/src/main/resources
+2026-10-16 14:25:57,716 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /orchestration-service/src/test/java
+2026-10-16 14:25:57,717 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /orchestration-service/src/test/resources
+2026-10-16 14:25:58,440 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 6 poms: local refresh takes 0.00 sec, refresh facades takes 7.00 sec, update config takes 2.00 sec 
+2026-10-16 14:26:00,377 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 14:26:00,378 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 14:26:00,400 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\member3-common\src\test\resources
+2026-10-16 14:26:02,044 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 14:26:02,064 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 14:26:02,071 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\lender-integration-service\src\test\resources
+2026-10-16 14:26:02,911 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 14:26:02,929 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 14:26:02,934 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-bank-a\src\test\resources
+2026-10-16 14:26:03,447 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 14:26:03,450 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 14:26:03,454 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-nbfc-b\src\test\resources
+2026-10-16 14:26:04,488 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 14:26:04,505 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 14:26:04,509 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\orchestration-service\src\test\resources
+2026-10-16 14:50:01,593 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 14:50:01,595 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 14:50:01,600 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\orchestration-service\src\test\resources
+2026-10-16 14:50:47,811 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 14:50:47,812 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 14:50:47,814 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\orchestration-service\src\test\resources
+2026-10-16 15:11:14,391 [Worker-20: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:11:14,648 [Worker-20: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:11:14,876 [Worker-20: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:11:58,788 [Worker-23: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:11:58,998 [Worker-23: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:11:59,210 [Worker-23: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:13:41,152 [Worker-23: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:13:41,350 [Worker-23: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:13:41,543 [Worker-23: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:18:50,071 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 15:18:50,152 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:18:50,158 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\orchestration-service\src\test\resources
+2026-10-16 15:19:03,134 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 15:19:03,164 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:19:03,170 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\lender-integration-service\src\test\resources
+2026-10-16 15:19:17,037 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 15:19:17,070 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:19:17,074 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-bank-a\src\test\resources
+2026-10-16 15:19:29,038 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 15:19:29,133 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:19:29,139 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-nbfc-b\src\test\resources
+2026-10-16 15:19:31,666 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 15:19:31,742 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:19:31,746 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-nbfc-b\src\test\resources
+2026-10-16 15:19:40,995 [Worker-30: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:19:41,198 [Worker-30: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:19:41,416 [Worker-30: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:28:24,406 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:28:24,407 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 15:28:24,412 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\member3-common\src\test\resources
+2026-10-16 15:30:08,361 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:30:08,363 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:30:08,369 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\orchestration-service\src\test\resources
+2026-10-16 15:30:27,300 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:30:27,300 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:30:27,306 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\orchestration-service\src\test\resources
+2026-10-16 15:32:19,864 [Worker-38: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:32:20,049 [Worker-38: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:32:20,221 [Worker-38: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:32:52,263 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:32:52,263 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:32:52,266 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\orchestration-service\src\test\resources
+2026-10-16 15:32:55,762 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 15:32:55,772 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:32:55,781 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\orchestration-service\src\test\resources
+2026-10-16 15:33:02,987 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:33:02,989 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:33:02,994 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\orchestration-service\src\test\resources
+2026-10-16 15:33:05,163 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:33:05,163 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:33:05,169 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\lender-integration-service\src\test\resources
+2026-10-16 15:33:05,292 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:33:05,293 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:33:05,297 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\orchestration-service\src\test\resources
+2026-10-16 15:33:07,196 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 15:33:07,203 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:33:07,208 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\lender-integration-service\src\test\resources
+2026-10-16 15:33:19,399 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:33:19,400 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:33:19,403 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\lender-integration-service\src\test\resources
+2026-10-16 15:33:25,182 [Worker-42: Launching lender-integration-service - LenderIntegrationServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:33:25,710 [Worker-42: Launching lender-integration-service - LenderIntegrationServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:33:26,205 [Worker-42: Launching lender-integration-service - LenderIntegrationServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:33:51,479 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:33:51,481 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:33:51,486 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\lender-integration-service\src\test\resources
+2026-10-16 15:34:07,361 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:07,362 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:07,369 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\lender-integration-service\src\test\resources
+2026-10-16 15:34:14,993 [Worker-39: Launching lender-integration-service - LenderIntegrationServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:34:15,167 [Worker-39: Launching lender-integration-service - LenderIntegrationServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:34:15,360 [Worker-39: Launching lender-integration-service - LenderIntegrationServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:34:34,136 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:34,138 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:34,142 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\lender-integration-service\src\test\resources
+2026-10-16 15:34:37,597 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:37,599 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:37,603 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\lender-integration-service\src\test\resources
+2026-10-16 15:34:37,720 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:37,721 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:37,724 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-bank-a\src\test\resources
+2026-10-16 15:34:39,561 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 15:34:39,568 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:39,571 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-bank-a\src\test\resources
+2026-10-16 15:34:45,961 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:45,962 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:45,965 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-bank-a\src\test\resources
+2026-10-16 15:34:52,772 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:52,775 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:52,783 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\lender-integration-service\src\test\resources
+2026-10-16 15:34:55,654 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:55,656 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:55,662 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\lender-integration-service\src\test\resources
+2026-10-16 15:34:55,775 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:55,778 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:34:55,781 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-bank-a\src\test\resources
+2026-10-16 15:35:08,415 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:35:08,416 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:35:08,419 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-bank-a\src\test\resources
+2026-10-16 15:35:37,924 [Worker-44: Launching mock-bank-a - MockBankAApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:35:38,104 [Worker-44: Launching mock-bank-a - MockBankAApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:35:38,283 [Worker-44: Launching mock-bank-a - MockBankAApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:35:49,228 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:35:49,230 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:35:49,233 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-bank-a\src\test\resources
+2026-10-16 15:35:56,027 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:35:56,031 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:35:56,037 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-bank-a\src\test\resources
+2026-10-16 15:36:00,789 [Worker-38: Launching mock-bank-a - MockBankAApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:36:00,991 [Worker-38: Launching mock-bank-a - MockBankAApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:36:01,165 [Worker-38: Launching mock-bank-a - MockBankAApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:36:19,020 [Worker-42: Launching mock-nbfc-b - MockNbfcBApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:36:19,201 [Worker-42: Launching mock-nbfc-b - MockNbfcBApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:36:19,377 [Worker-42: Launching mock-nbfc-b - MockNbfcBApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:36:30,043 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:36:30,045 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:36:30,049 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-nbfc-b\src\test\resources
+2026-10-16 15:36:31,574 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 15:36:31,578 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:36:31,581 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-nbfc-b\src\test\resources
+2026-10-16 15:36:42,514 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:36:42,516 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:36:42,521 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-nbfc-b\src\test\resources
+2026-10-16 15:36:48,075 [Worker-37: Launching mock-nbfc-b - MockNbfcBApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:36:48,561 [Worker-37: Launching mock-nbfc-b - MockNbfcBApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:36:49,031 [Worker-37: Launching mock-nbfc-b - MockNbfcBApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:54:47,418 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:54:47,421 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 15:54:47,425 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\member3-common\src\test\resources
+2026-10-16 15:54:48,971 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 15:54:48,971 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 15:54:48,977 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\member3-common\src\test\resources
+2026-10-16 15:55:16,566 [Worker-50: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:55:16,756 [Worker-50: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:55:16,990 [Worker-50: Launching New_configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:55:34,911 [Worker-47: Launching lender-integration-service - LenderIntegrationServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:55:35,502 [Worker-47: Launching lender-integration-service - LenderIntegrationServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:55:36,025 [Worker-47: Launching lender-integration-service - LenderIntegrationServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:56:19,115 [Worker-48: Launching mock-bank-a - MockBankAApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:56:19,457 [Worker-48: Launching mock-bank-a - MockBankAApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:56:19,648 [Worker-48: Launching mock-bank-a - MockBankAApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:56:34,485 [Worker-47: Launching mock-nbfc-b - MockNbfcBApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:56:34,665 [Worker-47: Launching mock-nbfc-b - MockNbfcBApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 15:56:34,847 [Worker-47: Launching mock-nbfc-b - MockNbfcBApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/member3-common: com.credflow:member3-common:1.0.0 with classifier null to /member3-common/target/classes
+2026-10-16 16:05:24,888 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:05:24,889 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-10-16 16:05:24,892 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\member3-common\src\test\resources
+2026-10-16 16:06:00,548 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:00,550 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:00,553 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-nbfc-b\src\test\resources
+2026-10-16 16:06:08,610 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:08,612 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:08,614 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-nbfc-b\src\test\resources
+2026-10-16 16:06:14,943 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:14,946 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:14,951 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-nbfc-b\src\test\resources
+2026-10-16 16:06:20,689 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:20,690 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:20,691 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-nbfc-b\src\test\resources
+2026-10-16 16:06:23,573 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:23,574 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:23,576 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\lender-integration-service\src\test\resources
+2026-10-16 16:06:23,621 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:23,622 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:23,624 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\mocks\mock-nbfc-b\src\test\resources
+2026-10-16 16:06:33,990 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:33,991 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-10-16 16:06:33,994 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\credflow\backend\backend\lender-integration-service\src\test\resources
